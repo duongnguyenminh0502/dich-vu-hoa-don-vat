@@ -1,0 +1,142 @@
+@layer tailwind {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --site-pad: 1.2rem;
+  --max-bound: 1440px;
+
+  --max-content: calc(var(--max-bound) - 2 * var(--site-pad));
+  --max-padding: max(var(--site-pad), calc((100vw - var(--max-content)) / 2));
+  --w-content: min(
+    calc(100vw - 2 * var(--site-pad)),
+    calc(var(--max-bound) - 2 * var(--site-pad))
+  );
+}
+
+.full-fledge {
+  grid-column: 1/-1 !important;
+}
+
+.max-content {
+  padding-left: var(--max-padding);
+  padding-right: var(--max-padding);
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+
+  &:active {
+    top: 2px;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+
+  p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 58px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    @apply text-blue-500;
+  }
+
+  .btn-border {
+    fill: none;
+    stroke-width: 2;
+  }
+
+  .bg-line {
+    stroke: theme("colors.blue.200");
+    transition: all 0.8s ease-in-out;
+  }
+
+  .hl-line {
+    stroke: theme("colors.blue.500");
+    stroke-dasharray: 40 480;
+    stroke-dashoffset: 40;
+    transition: all 0.8s ease-in-out;
+    animation: hl-line-animation 2s infinite normal; /* Thêm hiệu ứng animation */
+  }
+
+  @keyframes hl-line-animation {
+    0% {
+      stroke-dashoffset: 40;
+    }
+    100% {
+      stroke-dashoffset: -480;
+    }
+  }
+}
+
+:root {
+  --width: 72px;
+  --height: 72px;
+  --primary: theme("colors.blue.500");
+  --bg-color: theme("colors.blue.200");
+  --borderRadius: 50%;
+}
+
+.zalo-theme {
+  --primary: theme("colors.blue.500");
+  --bg-color: theme("colors.blue.200");
+}
+
+.phone-theme {
+  --primary: theme("colors.green.500");
+  --bg-color: theme("colors.green.200");
+}
+
+.cycle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--bg-color);
+  border-radius: var(--borderRadius);
+}
+
+.cycle:before,
+.cycle:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 3px var(--primary);
+  border-radius: var(--borderRadius);
+}
+
+.cycle:before {
+  animation: ripple 2s linear infinite;
+}
+
+.cycle:after {
+  animation: ripple 2s 1s linear infinite;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

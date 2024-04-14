@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -49,12 +50,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <head>
-        {/* <meta
-          name="google-site-verification"
-          content="yvubQhSmsQF7KLhgPYkG7chUO1gg0Ucu3Q-jzOlPKe4"
-        /> */}
-      </head>
       <body className={"relative " + inter.className}>
         <div className="z-[-1] fixed w-screen h-screen">
           <div className="absolute inset-0">
@@ -113,6 +108,7 @@ export default function RootLayout({
           }}
         /> */}
       </body>
+      <GoogleAnalytics gaId="G-GCNVNHL9JR" />
     </html>
   );
 }

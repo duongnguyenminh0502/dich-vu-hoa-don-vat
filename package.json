@@ -12,6 +12,7 @@
     "@mantine/core": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
     "@next/bundle-analyzer": "^14.1.2",
+    "@next/third-parties": "^14.2.1",
     "@tabler/icons-react": "^2.47.0",
     "@types/aos": "^3.0.7",
     "aos": "^2.3.4",

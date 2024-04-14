@@ -38,7 +38,7 @@ export default function AboutUs() {
 
           <div className="pt-6">
             <Button className={clsx(["md:w-fit md:px-8 mr-auto"])}>
-              LIÊN HỆ NGAY: 0358387379
+              LIÊN HỆ NGAY: 0376448574
             </Button>
           </div>
         </div>

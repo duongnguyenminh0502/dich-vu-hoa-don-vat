@@ -9,7 +9,7 @@ export default function Contact() {
         aria-label="Zalo"
         target="_blank"
         rel="noopener"
-        href="https://zalo.me/0358387379"
+        href="https://zalo.me/0376448574"
         className="place-content-center grid opacity-0 p-2 rounded-full cycle zalo-theme"
       >
         <div className="relative place-content-center grid rounded-full w-full h-full overflow-hidden">
@@ -27,7 +27,7 @@ export default function Contact() {
         aria-label="Phone Number"
         target="_blank"
         rel="noopener"
-        href="tel:0358387379"
+        href="tel:0376448574"
         className="place-content-center grid p-2 rounded-full cycle phone-theme"
       >
         <div className="place-content-center grid rounded-full w-full h-full overflow-hidden">

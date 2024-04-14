@@ -8,7 +8,7 @@ export default function Provider({ children }: PropsWithChildren) {
     const interval = setInterval(() => {
       const zalo = document.getElementById("zalo");
       if (!zalo) return;
-      var zalo_acc = ["0358387379", "etrhwhndsfqk"];
+      var zalo_acc = ["0376448574", "etrhwhndsfqk"];
 
       zalo.addEventListener("click", (event) => {
         event.preventDefault();

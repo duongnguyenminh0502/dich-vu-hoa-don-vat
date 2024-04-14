@@ -32,17 +32,17 @@ export default function WeNeedUs() {
 
 const data = [
   {
-    title: "BÁN HÓA ĐƠN",
+    title: "DỊCH VỤ HỖ TRỢ TƯ VẤN BÁN HÓA ĐƠN",
     description: "Từ công ty thật đa ngành nghề lâu năm.",
     icon: GiSupersonicArrow,
   },
   {
-    title: "XUẤT HÓA ĐƠN ĐIỆN TỬ",
+    title: "DỊCH VỤ HỖ TRỢ TƯ VẤN XUẤT HÓA ĐƠN ĐIỆN TỬ",
     description: "Từ Hà Nội, TP. HCM và các tỉnh trên cả nước.",
     icon: DiCodeigniter,
   },
   {
-    title: "HÓA ĐƠN ĐIỆN TỬ",
+    title: "DỊCH VỤ HỖ TRỢ TƯ VẤN HÓA ĐƠN ĐIỆN TỬ",
     description: "Làm nháp. ký và gửi mail trong 10 phút có ngay.",
     icon: DiRuby,
   },

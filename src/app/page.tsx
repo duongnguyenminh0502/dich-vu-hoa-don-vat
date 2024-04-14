@@ -1,3 +1,4 @@
+import Contact from "_@/app/ui/contact";
 import Footer from "_@/app/ui/footer";
 import Header from "_@/app/ui/header";
 import MoveToTop from "_@/app/ui/move-to-top";
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <>
       <MoveToTop />
-      {/* <Contact /> */}
+      <Contact />
       <Header />
 
       <HeroSection />

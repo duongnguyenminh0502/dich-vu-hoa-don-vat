@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://cungcaphoadonvat.com/sitemap.xml",
+    sitemap: "https://dichvucungcapketoan.com/sitemap.xml",
   };
 }

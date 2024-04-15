@@ -20,7 +20,7 @@ const metadataConstants = {
 };
 
 export const metadata = {
-  metadataBase: new URL("https://cungcaphoadonvat.com"),
+  metadataBase: new URL("https://dichvucungcapketoan.com"),
   title: metadataConstants.siteTitle,
   description: metadataConstants.siteDescription,
   keywords: metadataConstants.siteKeywords,
@@ -108,7 +108,7 @@ export default function RootLayout({
           }}
         /> */}
       </body>
-      <GoogleAnalytics gaId="G-GCNVNHL9JR" />
+      <GoogleAnalytics gaId="G-XY3YB2RMY7" />
     </html>
   );
 }

@@ -5,9 +5,6 @@ import Card from "_@/app/comps/card";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import H2 from "_@/app/comps/heading/h2";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
 
 const data = [
   {
@@ -42,7 +39,7 @@ const data = [
   },
 ];
 
-export default function ReviewSection() {
+export default function Reviews() {
   return (
     <section>
       <H2>Nhận xét của khách hàng</H2>

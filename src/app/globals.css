@@ -1,3 +1,9 @@
+@import "swiper/swiper.min.css";
+/* @import "swiper/modules/effect-coverflow.min.css"; */
+@import "swiper/modules/pagination.min.css";
+/* @import url("swiper/css/effect-coverflow");
+@import url("swiper/css/pagination"); */
+
 @layer tailwind {
   @tailwind base;
 }

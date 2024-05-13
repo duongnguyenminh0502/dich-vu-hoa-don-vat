@@ -85,14 +85,14 @@ export default function RootLayout({
           </div>
         </Provider>
 
-        <script
+        <noscript
           dangerouslySetInnerHTML={{
             __html: `
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N22PD3ZJ"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N22PD3ZJ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
           }}
-        ></script>
+        ></noscript>
       </body>
       <GoogleAnalytics gaId="G-XY3YB2RMY7" />
     </html>

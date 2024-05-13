@@ -50,6 +50,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N22PD3ZJ');`,
+          }}
+        ></script>
+      </head>
       <body className={"relative " + inter.className}>
         <div className="z-[-1] fixed w-screen h-screen">
           <div className="absolute inset-0">
@@ -74,39 +85,14 @@ export default function RootLayout({
           </div>
         </Provider>
 
-        {/* <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=GTM-TGP9Q23M"
-        ></Script>
-
         <script
           dangerouslySetInnerHTML={{
             __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TGP9Q23M');
-              `,
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N22PD3ZJ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            `,
           }}
-        /> */}
-
-        {/* <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-RZZCNY5QH8"
-        ></Script>
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-RZZCNY5QH8');
-              `,
-          }}
-        /> */}
+        ></script>
       </body>
       <GoogleAnalytics gaId="G-XY3YB2RMY7" />
     </html>

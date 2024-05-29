@@ -8,7 +8,7 @@ export default function Button({
   return (
     <a
       target="_blank"
-      href="tel:0376448574"
+      href="tel:0398311179"
       className={clsx([
         "flex bg-gradient-to-r from-green-500 hover:from-green-600 to-blue-500 hover:to-blue-600 shadow-md px-3 py-3 rounded-full w-full focus:outline-noneuppercase",
         "tracking-wide animate-bounce focus:animate-none",
@@ -17,7 +17,7 @@ export default function Button({
       ])}
       {...rest}
     >
-      <p className="w-full text-center">LIÊN HỆ NGAY: 0376448574</p>
+      <p className="w-full text-center">LIÊN HỆ NGAY: 0398311179</p>
     </a>
   );
 }

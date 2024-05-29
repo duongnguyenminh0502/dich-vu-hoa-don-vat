@@ -30,8 +30,8 @@ export default function ContactSection() {
                 </div>
                 <p className="font-medium text-gray-100 text-md">
                   <b>Điện thoại:</b>{" "}
-                  <a className="text-blue-300" href="tel:0376448574">
-                    0376448574
+                  <a className="text-blue-300" href="tel:0398311179">
+                    0398311179
                   </a>
                 </p>
               </div>
